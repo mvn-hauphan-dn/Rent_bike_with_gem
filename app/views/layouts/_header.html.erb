@@ -1,0 +1,19 @@
+<nav class="py-2 bg-light fixed-top border-bottom">
+  <div class="container d-flex flex-wrap">
+    <ul class="nav me-auto">
+      <li class="nav-item">
+        <%= link_to ' Home', root_path, class: "nav-link link-dark px-2 active bi bi-house-door" %>
+      </li>
+      <li class="nav-item"><a href="#" class="nav-link link-dark px-2 bi bi-messenger"> Facebook</a></li>
+      <li class="nav-item">
+        <%= link_to ' Guide', help_path, class: "nav-link link-dark px-2 bi bi-info-circle" %>
+      </li>
+      <li class="nav-item">
+          <a href="#" class="nav-link link-dark px-2 bi bi-phone-vibrate"> 0808083508</a>
+      </li>
+    </ul>
+    <ul class="nav">
+      <%= render 'user/session' %>
+    </ul>
+  </div>
+</nav>

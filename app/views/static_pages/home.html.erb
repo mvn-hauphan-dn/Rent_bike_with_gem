@@ -1,0 +1,117 @@
+<header class='py-2'>
+  <div class="container d-flex flex-wrap justify-content-center align-items-center">
+    <a href="/" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-dark text-decoration-none">
+      <%= image_tag "logo.png", class: "w-50" %>
+    </a>
+    <div class="col-12 col-lg-auto mb-3 mb-lg-0">
+      <%= image_tag "paypal.png", style: "height: 40px" %>
+    </div>
+  </div>
+</header>
+
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+    <%= image_tag "motor.jpg", class: "d-block w-100", style: "max-height: 810px" %>    
+      <div class="carousel-caption d-none d-md-block">
+        <h1>Do you want to rent a car to someone else?</h1>
+        <h4>Become our partner for a chance to earn extra monthly income.</h4>
+        <p>
+          <%= link_to 'Guide!', help_path + "?role=lessor", class: "btn btn-lg btn-primary" %>
+          <%= link_to 'Lessor Register!', new_user_registration_path + '?role=lessor', class: "btn btn-lg btn-success" %>
+        </p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <%= image_tag "motor1.jpg", class: "d-block w-100", style: "max-height: 810px" %>
+      <div class="carousel-caption d-none d-md-block">
+      <h1>Let rent a car from us!</h1>
+      <h4>For safe rides with quality cars.</h4>
+      <p>
+        <%= link_to 'Guide!', help_path + "?role=renter", class: "btn btn-lg btn-primary" %>
+        <%= link_to 'Renter Register!', new_user_registration_path + '?role=renter', class: "btn btn-lg btn-success" %>
+      </p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<div class="container marketing mt-4">
+  <div class="row">
+    <h4><i class="bi bi-star-fill"></i> CATEGORY VEHICLES ON THE PAGE</h4>
+    <div class="col-lg-4">
+      <div class="row justify-content-center">
+        <%= image_tag "xe_so.jpg", class: "bd-placeholder-img h-100", style: "max-height: 280px" %>
+      </div>
+      <h2 class='text-center'>Number Bike</h2>
+      <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
+    </div>
+    <div class="col-lg-4">
+      <div class="row justify-content-center">
+        <%= image_tag "xe_ga.jpg", class: "bd-placeholder-img h-100", style: "max-height: 280px" %>
+      </div>
+      <h2 class='text-center'>Motor Bike</h2>
+      <p>Another exciting bit of representative placeholder content. This time, we have moved on to the second column.</p>
+    </div>
+    <div class="col-lg-4">
+      <div class="row justify-content-center">
+        <%= image_tag "xe_con.jpg", class: "bd-placeholder-img h-100", style: "min-height: 280px" %>
+      </div>
+      <h2 class='text-center'>Clutch Bike</h2>
+      <p>And lastly this, the third column of representative placeholder content.</p>
+    </div>
+  </div>
+  <h4><i class="bi bi-star-fill"></i> SALIENT FEATURES</h4>
+  <hr class="featurette-divider">
+
+  <div class="row featurette">
+    <div class="col-md-7">
+      <h2 class="featurette-heading">Simple car rental procedure.</span></h2>
+      <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
+    </div>
+    <div class="col-md-5 d-flex justify-content-end">
+      <%= image_tag "thu_tuc.jpg" %>
+    </div>
+  </div>
+
+  <hr class="featurette-divider">
+
+  <div class="row featurette">
+    <div class="col-md-7 order-md-2">
+      <h2 class="featurette-heading">Drive safe with insurance</h2>
+      <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
+    </div>
+    <div class="col-md-5 order-md-1">
+    <%= image_tag "thu_tuc5.jpg" %>
+    </div>
+  </div>
+
+  <hr class="featurette-divider">
+
+  <div class="row featurette">
+    <div class="col-md-7">
+      <h2 class="featurette-heading">Easy payment</span></h2>
+      <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p>
+    </div>
+    <div class="col-md-5 d-flex justify-content-end">
+      <%= image_tag "thu_tuc2.jpg" %>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <h4><i class="bi bi-star-fill"></i> NEWEST VIHICLES ON THE PAGE</h4>
+
+</div>
