@@ -1,0 +1,7 @@
+<%= link_to ' update', edit_user_registration_path, class: "nav-link link-dark px-2 active bi bi-house-door" %>
+<%= link_to ' unlock', new_user_unlock_path, class: "nav-link link-dark px-2 active bi bi-house-door" %>
+<%= current_user.sign_in_count %> <br>
+<%= current_user.current_sign_in_at %><br>
+<%= current_user.last_sign_in_at %><br>
+<%= current_user.current_sign_in_ip %><br>
+<%= current_user.last_sign_in_ip %>

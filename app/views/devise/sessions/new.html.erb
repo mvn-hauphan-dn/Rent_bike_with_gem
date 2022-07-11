@@ -1,10 +1,10 @@
-<div class="container h-100 mt-5 mb-4 py-5">
+<div class="container my-5 py-3">
   <div class="row d-flex align-items-center justify-content-center h-100">
     <div class="col-md-8 col-lg-7 col-xl-6">
       <%= image_tag "logo.jpg", class: "img-fluid" %>
     </div>
     <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
-      <div class="d-flex justify-content-center mb-3 pb-1">
+      <div class="d-flex justify-content-center mb-3 py-1">
         <%= image_tag "logo.png" %>
       </div>
 
@@ -21,15 +21,19 @@
           <%= f.label :password, for: "floatingPassword" %>
         </div>
         <% if devise_mapping.rememberable? %>
-        <div class="d-flex justify-content-around align-items-center mb-4">
-          <%= f.label :remember_me, class: "form-check" do %>
-            <%= f.check_box :remember_me, class: "form-check-input" %>
-            <span>Remember me</span>
-          <% end %>
-          <%= link_to 'Forgot password?', new_user_password_path, class: "text-decoration-none", for: "floatingPassword" %>
-          <%= link_to 'Resend confirmation?', '#', class: "text-decoration-none", for: "floatingPassword" %>
-        </div>
+          <div class="d-flex justify-content-around align-items-center mb-4">
+            <%= f.label :remember_me, class: "form-check" do %>
+              <%= f.check_box :remember_me, class: "form-check-input" %>
+              <span>Remember me</span>
+            <% end %>
+            <%= link_to 'Forgot password?', new_user_password_path, class: "text-decoration-none" %>
+          </div>
+          <div class="d-flex justify-content-around align-items-center mb-4">
+            <%= link_to 'Resend confirmation?', new_user_confirmation_path, class: "text-decoration-none" %>
+            <%= link_to 'Resend unlock?', new_user_unlock_path, class: "text-decoration-none" %>
+          </div>
         <% end %>
+
 
         <div class="d-flex justify-content-around align-items-center mb-4">
           <%= f.submit "Log in", class: "btn btn-primary btn-lg btn-block" %>
@@ -38,3 +42,5 @@
     </div>
   </div>
 </div>
+
+<%= render 'devise/shared/links' %>

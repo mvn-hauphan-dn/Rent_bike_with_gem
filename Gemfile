@@ -53,6 +53,14 @@ gem "bootsnap", require: false
 
 gem 'devise'
 
+gem 'omniauth'
+
+gem 'omniauth-google-oauth2'
+
+gem 'omniauth-rails_csrf_protection'
+
+gem "omniauth-facebook"
+
 gem 'dotenv-rails'
 
 group :development, :test do
