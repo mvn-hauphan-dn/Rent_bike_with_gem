@@ -1,0 +1,15 @@
+<% if notice %>
+  <div class="alert alert-info mb-0" id='success-alert'><%= notice %></div>
+<% elsif alert %>
+  <div class="alert alert-danger mb-0" id='success-alert'><%= alert %></div>
+<% end %>
+
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+<script>
+  $(document).ready(function() {
+    $("#success-alert").fadeTo(2000, 500).slideUp(500, function() {
+      $("#success-alert").slideUp(500);
+    });
+  });
+</script>

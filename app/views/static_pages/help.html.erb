@@ -1,0 +1,45 @@
+<h1>StaticPages#help</h1>
+<p>Find me in app/views/static_pages/help.html.erb</p>
+
+<div class="alert alert-success" id='success-alert' role="alert">
+  A simple success alert—check it out!
+</div>
+<button type="button" class="btn btn-primary" id="myWish">Show live alert</button>
+
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+<script>
+  $(document).ready(function() {
+    $("#success-alert").hide();
+    $("#myWish").click(function showAlert() {
+      $("#success-alert").fadeTo(2000, 500).slideUp(500, function() {
+        $("#success-alert").slideUp(500);
+      });
+    });
+  });
+
+
+
+  $(document).ready(function() {
+    $("#myModal").fadeTo(2000, 500).slideUp(500, function() {
+      $("#myModal").slideUp(500);
+    });
+  });
+
+</script>
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" id='asdsad'>
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade mt-5" id="myModal" aria-hidden="true" data-bs-focus='false' tabindex="-1" aria-labelledby="exampleModalLabel">
+  <div class="modal-dialog modal-lg bg-danger">
+    <div class="modal-content">
+      <div class="modal-body">
+        ...aaaaaaaaaaaaaaaaaa
+      </div>
+    </div>
+  </div>
+</div>
